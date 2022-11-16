@@ -73,7 +73,7 @@ docker run -d --name rancher --restart=unless-stopped -v /opt/rancher:/var/lib/r
 minikube start
 ```
 
-11. Executar os arquivos
+10. Executar os arquivos
 ```
 kubectl create -f nome-de-cada-arquivo
 ```
