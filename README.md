@@ -78,7 +78,7 @@ minikube start
 kubectl create -f nome-de-cada-arquivo
 ```
 
-12. Criar um url para ter acesso a aplicaçao
+11. Criar um url para ter acesso a aplicaçao
 ```
 minikube service wordpress --url
 ```
