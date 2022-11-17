@@ -117,25 +117,27 @@ Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher
 - Feito isso estará dentro do Rancher.
 
 
-9. Inicie o seu cluster com o minikube
+# Usando o Minikube no Linux:
+
+1. Inicie o seu cluster com o minikube
 
 ```
 minikube start
 ```
 
-10. Executar os arquivos
+2. Executar os arquivos
 
 ```
 kubectl create -f nome-de-cada-arquivo
 ```
 
-11. Verifique se os Pods estão em execução:
+3. Verifique se os Pods estão em execução:
 
 ```
 kubectl get po
 ```
 
-12. Criar um url para ter acesso a aplicação
+4. Criar um url para ter acesso a aplicação
 ```
 minikube service wordpress --url
 ```
