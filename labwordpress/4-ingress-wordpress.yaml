@@ -2,12 +2,14 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
+  namespace: labwordpress
   name: ingress-wordpress
 spec:
   rules:
-  - host: wordpress.4labs.example
+  - host: labwordpress.compass.com
     http:
       paths:
       - backend:
-          serviceName: wordpress
-          servicePort: 80
+          name: wordpress
+          port:
+            number: 80
