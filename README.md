@@ -20,7 +20,7 @@ Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher
 
 - Feito isso estará dentro do Rancher.
 
-# O que você precisará para instalar o minikube:
+# Usando o Minikube:
 - 2 CPUs ou mais
 - 2 GB de memória livre
 - 20 GB de espaço livre em disco
@@ -119,25 +119,36 @@ Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher
 
 # Usando o Minikube no Linux:
 
-1. Inicie o seu cluster com o minikube
+- Inicie o seu cluster com o minikube
 
 ```
 minikube start
 ```
 
-2. Executar os arquivos
+# Realizar o Deploy do Wordpress
+
+- Descrição dos arquivos:
+	1-pvc.yaml: Cria o recurso PersistentVolumeClaim para o servidor banco MysQL e Wordpress;
+	2-mysql-deployment.yaml: Cria os recursos Secret, Service e Deployment para o banco MySQL;
+	3-wordpress-deployment.yaml: Cria os recursos Service e Deployment para o Wordpress;
+	4-ingress-wordpress.yaml: Criar o recurso Ingress para acessar o Wordpress através do domínio wordpress.compass.com.
+	
+1. Aplique as configurações dos arquivos da pasta labwordpress:
 
 ```
-kubectl create -f nome-de-cada-arquivo
+kubectl create -f nome-de-cada-arquivo ou kubectl apply -f lab-wordpress
 ```
 
-3. Verifique se os Pods estão em execução:
+2. Verifique se os Pods estão em execução:
 
 ```
 kubectl get po
 ```
 
-4. Criar um url para ter acesso a aplicação
+3. Criar uma url para ter acesso a aplicação
 ```
 minikube service wordpress --url
 ```
+
+4. Acessar a aplicação Wordpress no cluster K8s
+- No Browser de sua máquina Física, acesse o domínio e realize a instalação do Wordpress.
