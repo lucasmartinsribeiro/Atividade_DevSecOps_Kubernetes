@@ -106,11 +106,16 @@ sudo chmod a+r /etc/apt/keyrings/docker.gpg
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-8. Instalar Rancher - Single Node
+# Usando o Rancher no Linux:
 
-```
-docker run -d --name rancher --restart=unless-stopped -v /opt/rancher:/var/lib/rancher  -p 80:80 -p 443:443 rancher/rancher:v2.4.3
-```
+- Abra o terminal do Ubuntu.
+
+Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher:/var/lib/rancher  -p 80:80 -p 443:443 rancher/rancher:v2.4.3```
+
+- Após, abra um navegador e digite :  ```localhost:80```.
+
+- Feito isso estará dentro do Rancher.
+
 
 9. Inicie o seu cluster com o minikube
 
