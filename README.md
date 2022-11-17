@@ -128,10 +128,10 @@ minikube start
 # Realizar o Deploy do Wordpress
 
 - Descrição dos arquivos:
-	1-pvc.yaml: Cria o recurso PersistentVolumeClaim para o servidor banco MysQL e Wordpress;
-	2-mysql-deployment.yaml: Cria os recursos Secret, Service e Deployment para o banco MySQL;
-	3-wordpress-deployment.yaml: Cria os recursos Service e Deployment para o Wordpress;
-	4-ingress-wordpress.yaml: Criar o recurso Ingress para acessar o Wordpress através do domínio wordpress.compass.com.
+ - 1-pvc.yaml: Cria o recurso PersistentVolumeClaim para o servidor banco MysQL e Wordpress;
+ - 2-mysql-deployment.yaml: Cria os recursos Secret, Service e Deployment para o banco MySQL;
+ - 3-wordpress-deployment.yaml: Cria os recursos Service e Deployment para o Wordpress;
+ - 4-ingress-wordpress.yaml: Criar o recurso Ingress para acessar o Wordpress através do domínio wordpress.compass.com.
 	
 1. Aplique as configurações dos arquivos da pasta labwordpress:
 
