@@ -119,11 +119,18 @@ minikube start
 ```
 
 10. Executar os arquivos
+
 ```
 kubectl create -f nome-de-cada-arquivo
 ```
 
-11. Criar um url para ter acesso a aplicação
+11. Verifique se os Pods estão em execução:
+
+```
+kubectl get po
+```
+
+12. Criar um url para ter acesso a aplicação
 ```
 minikube service wordpress --url
 ```
