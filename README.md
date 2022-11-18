@@ -125,6 +125,12 @@ Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher
 minikube start
 ```
 
+- Caso queira remover o cluster:
+
+```
+minikube delete
+```
+
 - Verifique se você já possui um cluster Kubernetes:
 
 ```
@@ -151,12 +157,61 @@ kubectl create -f nome-de-cada-arquivo ou kubectl apply -f lab-wordpress
 kubectl get po
 ```
 
-3. Criar uma url para ter acesso a aplicação
+3. Listar namespaces:
+
+```
+kubectl get namespace
+```
+
+4. Listar secrets:
+
+```
+kubectl get secret
+```
+
+5. Listar pvs:
+
+```
+kubectl get pvc
+```
+
+6. Listar deployments:
+
+```
+kubectl get deployment
+```
+
+7. Listar deployments:
+
+```
+kubectl get deployment
+```
+
+9. Listar todos os recursos:
+
+```
+kubectl get all
+```
+
+10. Criar uma url para ter acesso a aplicação:
+
 ```
 minikube service wordpress --url
 ```
 
-4. Acessar a aplicação Wordpress no cluster K8s
+11. Ver detalhes sobre o cluster:
+
+```
+minikube status
+```
+
+12. Os logs do Minikube podem ser acessados através do seguinte comando:
+
+```
+minikube logs
+```
+
+13. Acessar a aplicação Wordpress no cluster K8s
 - No Browser de sua máquina Física, acesse o domínio e realize a instalação do Wordpress.
 
 # Links para tentar solucionar alguns problemas que você possa vir a ter:
