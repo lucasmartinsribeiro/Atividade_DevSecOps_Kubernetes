@@ -158,3 +158,10 @@ minikube service wordpress --url
 
 4. Acessar a aplicação Wordpress no cluster K8s
 - No Browser de sua máquina Física, acesse o domínio e realize a instalação do Wordpress.
+
+# Links para tentar solucionar alguns problemas que você possa vir a ter:
+- https://kubernetes.io/pt-br/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+- https://github.com/kubernetes/minikube/issues/4172
+- https://github.com/kubernetes/kubernetes/issues/50295
+- https://discuss.kubernetes.io/t/the-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/1464/2
+- https://github.com/Hawaiideveloper/Infastructure-as-Code-Sample_Env/issues/15#issuecomment-811377749
