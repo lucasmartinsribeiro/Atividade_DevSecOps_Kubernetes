@@ -206,7 +206,7 @@ minikube logs
 ```
 
 11. Acessar a aplicação Wordpress no cluster K8s
-- No Browser de sua máquina Física, acesse o domínio e realize a instalação do Wordpress.
+- No Browser de sua máquina, acesse o domínio e realize a instalação do Wordpress.
 
 # Links para tentar solucionar alguns problemas que você possa vir a ter:
 - https://kubernetes.io/pt-br/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
