@@ -125,6 +125,12 @@ Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher
 minikube start
 ```
 
+- Verifique se você já possui um cluster Kubernetes:
+
+```
+kubectl get nodes
+```
+
 # Realizar o Deploy do Wordpress
 
 ## Descrição dos arquivos:
