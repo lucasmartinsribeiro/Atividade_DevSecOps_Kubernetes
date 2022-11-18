@@ -150,7 +150,7 @@ kubectl get nodes
 1. Aplique as configurações dos arquivos da pasta labwordpress:
 
 ```
-kubectl create -f nome-de-cada-arquivo ou kubectl apply -f lab-wordpress
+kubectl create -f nome-de-cada-arquivo ou kubectl apply -f labwordpress
 ```
 
 2. Verifique se os Pods estão em execução:
