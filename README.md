@@ -169,49 +169,43 @@ kubectl get namespace
 kubectl get secret
 ```
 
-5. Listar pvs:
+5. Listar pvc:
 
 ```
 kubectl get pvc
 ```
 
-6. Listar deployments:
+6. Listar deployment:
 
 ```
 kubectl get deployment
 ```
 
-7. Listar deployments:
-
-```
-kubectl get deployment
-```
-
-9. Listar todos os recursos:
+7. Listar todos os recursos:
 
 ```
 kubectl get all
 ```
 
-10. Criar uma url para ter acesso a aplicação:
+8. Criar uma url para ter acesso a aplicação:
 
 ```
 minikube service wordpress --url
 ```
 
-11. Ver detalhes sobre o cluster:
+9. Ver detalhes sobre o cluster:
 
 ```
 minikube status
 ```
 
-12. Os logs do Minikube podem ser acessados através do seguinte comando:
+10. Os logs do Minikube podem ser acessados através do seguinte comando:
 
 ```
 minikube logs
 ```
 
-13. Acessar a aplicação Wordpress no cluster K8s
+11. Acessar a aplicação Wordpress no cluster K8s
 - No Browser de sua máquina Física, acesse o domínio e realize a instalação do Wordpress.
 
 # Links para tentar solucionar alguns problemas que você possa vir a ter:
