@@ -150,49 +150,49 @@ kubectl get nodes
 1. Aplique as configurações dos arquivos da pasta labwordpress:
 
 ```
-kubectl create -f nome-de-cada-arquivo ou kubectl apply -f labwordpress
+kubectl apply -f labwordpress
 ```
 
 2. Verifique se os Pods estão em execução:
 
 ```
-kubectl get po
+kubectl get po --namespace labwordpress 
 ```
 
 3. Listar namespaces:
 
 ```
-kubectl get namespace
+kubectl get namespace --namespace labwordpress
 ```
 
 4. Listar secrets:
 
 ```
-kubectl get secret
+kubectl get secret --namespace labwordpress
 ```
 
 5. Listar pvc:
 
 ```
-kubectl get pvc
+kubectl get pvc --namespace labwordpress 
 ```
 
 6. Listar deployment:
 
 ```
-kubectl get deployment
+kubectl get deployment --namespace labwordpress
 ```
 
 7. Listar todos os recursos:
 
 ```
-kubectl get all
+kubectl get all --namespace labwordpress
 ```
 
 8. Criar uma url para ter acesso a aplicação:
 
 ```
-minikube service wordpress --url
+minikube service wordpress --namespace labwordpress --url
 ```
 
 9. Ver detalhes sobre o cluster:
