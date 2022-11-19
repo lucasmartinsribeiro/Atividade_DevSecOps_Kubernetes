@@ -241,7 +241,7 @@ minikube logs
 - Clicar no arquivo hosts.
 - Executar o arquivo no Notepad++ como administrador.
 - Atribuir uma nova linha no arquivo hosts contendo o IP do host e o nome do domínio.
-- Ex: 127.0.0.1 atividade-compasso
+- Ex: 192.168.49.2 labwordpress.compass.com
 
 ## Linux ##
 - Entre no diretório raiz:
@@ -268,7 +268,7 @@ Exemplo:
 
 ```
 127.0.0.1	localhost
-127.0.0.1       atividade-compasso #linha acrescentada
+192.168.49.2    labwordpress.compass.com #linha acrescentada
 ```
 
 >Obs: Para salvar basta pressionar ESC e digitar :wq! e dar enter.
