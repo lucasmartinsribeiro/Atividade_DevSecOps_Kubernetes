@@ -234,6 +234,53 @@ minikube logs
 15. Acessar a aplicação Wordpress no cluster K8s
 - No Browser de sua máquina, acesse o domínio e realize a instalação do Wordpress.
 
+# Alterar o nome do domínio "localhost" #
+
+## Windows ##
+- Navegar ao diretório: # cd C:\WINDOWS\system32\drivers\etc\
+- Clicar no arquivo hosts.
+- Executar o arquivo no Notepad++ como administrador.
+- Atribuir uma nova linha no arquivo hosts contendo o IP do host e o nome do domínio.
+- Ex: 127.0.0.1 atividade-compasso
+
+## Linux ##
+- Entre no diretório raiz:
+```
+cd /
+```	
+- Conceda permissão de escrita para o arquivo hosts.
+
+```
+sudo chmod 777 /etc/hosts
+```
+
+- abra o arquivo hosts no editor.
+
+```
+vim /etc/hosts
+```
+
+>Obs: pressione a tecla i para entrar no modo de edição
+	
+- Edite o o arquivo hosts atribuindo uma nova linha com um ip padrão host(127.0.0.1) e logo após o nome do domínio:
+
+Exemplo:
+
+```
+127.0.0.1	localhost
+127.0.0.1       atividade-compasso #linha acrescentada
+```
+
+>Obs: Para salvar basta pressionar ESC e digitar :wq! e dar enter.
+
+
+
+- Depois de ter salvo as modificações do arquivo, volte a permissão padrão do arquivo:
+
+```
+sudo chmod 644 hosts
+```
+
 # Links para tentar solucionar alguns problemas que você possa vir a ter:
 - https://kubernetes.io/pt-br/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 - https://github.com/kubernetes/minikube/issues/4172
