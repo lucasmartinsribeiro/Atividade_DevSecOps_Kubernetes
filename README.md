@@ -192,7 +192,7 @@ kubectl get all --namespace labwordpress
 8. Excluir a aplicação:
 
 ```
-kubectl delete -f --namespace labwordpress
+kubectl delete -f labwordpress
 ```
 
 9. Visualizar o estado do ingress da aplicação:
