@@ -189,25 +189,49 @@ kubectl get deployment --namespace labwordpress
 kubectl get all --namespace labwordpress
 ```
 
-8. Criar uma url para ter acesso a aplicação:
+8. Excluir a aplicação:
 
 ```
-minikube service wordpress --namespace labwordpress --url
+kubectl delete -f --namespace labwordpress
 ```
 
-9. Ver detalhes sobre o cluster:
+9. Visualizar o estado do ingress da aplicação:
+
+```
+kubectl get ingress -n labwordpress
+```
+
+10. Visualizar o ingress da aplicação:
+
+```
+kubectl describe ingress -n labwordpress
+```
+
+11. Listar o serviço da aplicação:
+
+```
+kubectl get svc -n labwordpress
+```
+
+12. Descrever o serviço da aplicação:
+
+```
+kubectl describe svc -n labwordpress
+```
+
+13. Ver detalhes sobre o cluster:
 
 ```
 minikube status
 ```
 
-10. Os logs do Minikube podem ser acessados através do seguinte comando:
+14. Os logs do Minikube podem ser acessados através do seguinte comando:
 
 ```
 minikube logs
 ```
 
-11. Acessar a aplicação Wordpress no cluster K8s
+15. Acessar a aplicação Wordpress no cluster K8s
 - No Browser de sua máquina, acesse o domínio e realize a instalação do Wordpress.
 
 # Links para tentar solucionar alguns problemas que você possa vir a ter:
