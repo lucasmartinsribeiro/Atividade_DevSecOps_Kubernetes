@@ -234,7 +234,7 @@ minikube logs
 15. Acessar a aplicação Wordpress no cluster K8s
 - No Browser de sua máquina, acesse o domínio e realize a instalação do Wordpress.
 
-# Alterar o nome do domínio "localhost" #
+# Alterar o nome do domínio.
 
 ## Windows ##
 - Navegar ao diretório: # cd C:\WINDOWS\system32\drivers\etc\
