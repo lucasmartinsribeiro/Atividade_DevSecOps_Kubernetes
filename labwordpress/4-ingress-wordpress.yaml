@@ -4,6 +4,8 @@ kind: Ingress
 metadata:
   namespace: labwordpress
   name: ingress-wordpress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
