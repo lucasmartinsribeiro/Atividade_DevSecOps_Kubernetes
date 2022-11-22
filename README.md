@@ -120,10 +120,16 @@ Digite: ```docker run -d --name rancher --restart=unless-stopped -v /opt/rancher
 
 # Usando o Minikube no Linux:
 
-- Inicie o seu cluster com o minikube
+- Inicie o seu cluster com o minikube:
 
 ```
 minikube start
+```
+
+- Habilitar o controlador Ingress:
+
+```
+minikube addons enable ingress
 ```
 
 - Caso queira remover o cluster:
@@ -241,7 +247,7 @@ minikube logs
 - Clicar no arquivo hosts.
 - Executar o arquivo no Notepad++ como administrador.
 - Atribuir uma nova linha no arquivo hosts contendo o IP do host e o nome do domínio.
-- Ex: 192.168.49.2 labwordpress.compass.com
+- Ex: 192.168.49.2 localhost
 
 ## Linux ##
 - Entre no diretório raiz:
