@@ -1,5 +1,5 @@
 
-# Kubernetes (K8s) - - WordPress e MySQL
+# Kubernetes (K8s) - WordPress e MySQL
 <img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" alt="drawing" width="100"/> <img src="https://user-images.githubusercontent.com/112975441/202521730-762beeae-fc01-4711-9657-fab46c3c486e.png" width="100"> <img src="https://user-images.githubusercontent.com/112975441/202522596-0dcacd65-ffb6-49fd-b7c7-474d8b03c355.png" width="100">
 
 Esse repositório tem como objetivo mostrar como subir uma aplicação Wordpress + DB Mysql utilizando kubernetes.
